@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Шеф Чебурек Салават</title>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(92601687, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/92601687" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="logo">
+      <a href="/" class="logo__link"><img src="./images/logo__img.png" alt="логотип компании Шеф Чебурек"
+          class="logo__img" /></a>
+    </div>
+    <div class="header__info">
+      <p class="header__brand">
+        Шеф<span class="header_color_red"> Чебурек </span></p>
+
+      <address class="header__description">
+        г. Салават, Островского 26а<br />
+        г. Салават, Ленина 22
+      </address>
+    </div>
+    <div class="header__work-time">24/7</div>
+    <a href="tel:+79872401555" class="header__phone" title="позвонить в Шеф Чебурек">+7(987)240-15-55</a>
+    <div class="header__cart">
+      <button type="button" class="header__cart-link"></button>
+      <span class="header__cart-quantity cart_quantity"></span>
+    </div>
+  </header>
+  <main class="main">
+    <h2 class="products__title" id="catalog" style="font-size: 22px;">Выберите категорию:</h2>
+    <nav class="catalog">
+      <a href="#" class="catalog__item" data-type="Чебуреки с мясом">
+        <img src="https://shefcheburek.ru/images/products/1.jpg" alt="Чебуреки с мясом" class="catalog__img">
+        <h3 class="catalog__item-title">Чебуреки с мясом</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Миничебуреки 5шт.">
+        <img src="https://shefcheburek.ru/images/products/9.jpg" alt="Миничебуреки 5шт." class="catalog__img">
+        <h3 class="catalog__item-title">Миничебуреки 5шт.</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Чебуреки с картофелем">
+        <img src="https://shefcheburek.ru/images/products/12.jpg" alt="Чебуреки с картофелем" class="catalog__img">
+        <h3 class="catalog__item-title">Чебуреки с картофелем</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Чебуреки с сыром">
+        <img src="https://shefcheburek.ru/images/products/21.jpg" alt="Чебуреки с сыром" class="catalog__img">
+        <h3 class="catalog__item-title">Чебуреки с сыром</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Сладкие чебуреки">
+        <img src="https://shefcheburek.ru/images/products/15.jpg" alt="Сладкие чебуреки" class="catalog__img">
+        <h3 class="catalog__item-title">Сладкие чебуреки</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Снеки">
+        <img src="https://shefcheburek.ru/images/products/31.png" alt="Снеки" class="catalog__img">
+        <h3 class="catalog__item-title">Снеки</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Пельмени, вареники">
+        <img src="https://shefcheburek.ru/images/products/29.jpg" alt="Пельмени, вареники" class="catalog__img">
+        <h3 class="catalog__item-title">Пельмени, вареники</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Горячие напитки">
+        <img src="https://shefcheburek.ru/images/products/42.jpg" alt="Горячие напитки" class="catalog__img">
+        <h3 class="catalog__item-title">Горячие напитки</h3>
+      </a>
+      <a href="#" class="catalog__item" data-type="Холодные напитки">
+        <img src="https://shefcheburek.ru/images/products/51.jpg" alt="Холодные напитки" class="catalog__img">
+        <h3 class="catalog__item-title">Холодные напитки</h3>
+      </a>
+    </nav>
+
+    <section class="products">
+      <h2 class="products__title" id="filter-products-title"></h2>
+      <div class="products__items filtered-products-container">
+        <!-- сюда загрузятся товары - фильтр товаров -->
+      </div>
+    </section>
+    <section class="product-popular">
+      <h2 class="products__title products__title_medium">Часто заказывают</h2>
+      <div class="product-popular__slider">
+        <ul class="product-popular__container">
+          <!-- сюда загрузятся актуальные часто заказываемые товары через JS -->
+        </ul>
+        <button class="product-popular__slider-button product-popular__slider-button-prev" type="button">
+          <img src="./images/slider-rev.png" alt="" class="product-popular__slider-button-img" />
+        </button>
+        <button class="product-popular__slider-button product-popular__slider-button-next" type="button">
+          <img src="./images/slider-next.png" alt="" class="product-popular__slider-button-img" />
+        </button>
+      </div>
+    </section>
+    <section class="products">
+      <div class="products__items product__container">
+        <!-- сюда загрузятся товары-->
+      </div>
+    </section>
+
+  </main>
+  <nav class="mob-menu">
+    <a href="#catalog" class="mob-menu__item mob-menu__catalog"><img class="mob-menu__item-img"
+        src="./images/mob-menu-catalog.png" alt="каталог"></a>
+    <a href="tel:+79872401555" title="позвонить в Шеф Чебурек" class="mob-menu__item mob-menu__call"><img
+        class="mob-menu__item-img" src="./images/mob-menu-call.png" alt="позвонить"></a>
+    <button type="button" class="mob-menu__contacts">
+      <img src="./images/logo__img.png" alt="контакты" class="mob-menu__img">
+    </button>
+    <button type="button" class="mob-menu__item mob-menu__cart"><img class="mob-menu__item-img"
+        src="./images/mob-menu-cart.png" alt="корзина"><span
+        class="mob-menu__cart-quantity cart_quantity"></span></button>
+    <button type="button" class="mob-menu__item mob-menu__orders"><img class="mob-menu__item-img"
+        src="./images/mob-menu-orders.png" alt="заказы"></button>
+  </nav>
+  <footer class="footer">
+    <div class="footer__links">
+      <ul class="footer__column">
+        <li>Шеф Чебурек</li>
+        <li><a href="#" class="/terms">Пользовательское соглашение</a></li>
+        <li><a href="#" class="footer__link">Доставка</a></li>
+        <li><a href="#" class="footer__link">Контакты</a></li>
+        <li><a href="#" class="footer__link">Акции</a></li>
+        <li><a href="#" class="footer__link">Вакансии</a></li>
+      </ul>
+      <ul class="footer__column">
+        <li>Этот сайт</li>
+        <li>
+          <a href="#" class="footer__link feedback-link" data-name="error">Нашли ошибку?</a>
+        </li>
+        <li>
+          <a href="#" class="footer__link feedback-link" data-name="letter">Письмо директору</a>
+        </li>
+        <li>
+          <a href="#" class="footer__link feedback-link" data-name="site">Хочу такой же сайт!</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- модальные окна -->
+  <!-- попап продукта -->
+  <section class="popup popup-product">
+    <div class="popup-product__container">
+      <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__close" />
+      <h3 class="popup-product__title">Название пиццы</h3>
+      <div class="popup-product__description">
+        <img src="./images/pizza-example.png" alt="описание товара" class="popup-product__img-mob" />
+        <div class="popup-product__content">
+          <p class="popup-product__weight">840 г</p>
+          <p class="popup-product__opisanie">
+            Пастрами из индейки, острая чоризо, пикантная пепперони, бекон,
+            моцарелла, фирменный томатный соус
+          </p>
+          <form name="properties" class="input-radio">
+          </form>
+          <form id="quantity" name="quantity" class="popup-product__quantity quantity">
+            <p class="quantity__text">количество: </p>
+            <button class="quantity__btn quantity__btn_minus" disabled>-</button>
+            <input type="text" id="quantity" name="quantity" class="quantity__input" value="1" maxlength="2" min="1"
+              max="99" readonly>
+            <button class="quantity__btn quantity__btn_plus">+</button>
+          </form>
+          <ul class="popup-product__supplements">
+
+          </ul>
+        </div>
+
+      </div>
+      <button class="popup-product__add-cart" data-id="">Добавить в корзину за 99р.</button>
+      <div class="popup-product__imgzone">
+        <img src="./images/pizza-example.png" alt="описание товара" class="popup-product__img" />
+      </div>
+    </div>
+
+  </section>
+  <!-- попап уведомления добавления товара в корзину -->
+  <section class="popup popup-message ">
+    <div class="message__container">
+      <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__close" />
+      <div class="message">
+        <h3 class="message__title">Успешно добавлено!</h3>
+        <button class="message__continue-btn">Продолжить покупки</button>
+        <button class="message__cart-btn">Перейти в корзину</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- попап корзины -->
+  <section class="popup popup-cart">
+    <div class="cart__container">
+      <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__close" />
+      <div class="cart">
+        <h3 class="cart__title">Ваша корзина</h3>
+        <article class="cart__line cart__line_main">
+          <p class="cart__product-text cart__product-text_small">товар</p>
+          <p class="cart__product-text cart__product-text_small">цена за ед.</p>
+          <p class="cart__product-text cart__product-text_small">количество</p>
+          <p class="cart__product-text cart__product-text_small">стоимость</p>
+          <p class="cart__product-text cart__product-text_small">удалить</p>
+        </article>
+
+        <div class="cart__table">
+
+        </div>
+        <summary class="cart__line cart__line_total">
+          <p class="cart__product-text cart__product-text_small ">всего на сумму:</p>
+          <p class="cart__product-text cart__product-text_big">0 руб.</p>
+          <button type="reset" class="cart__clear-btn">Очистить</button>
+          <button type="submit" class="cart__order-btn">Оформить</button>
+        </summary>
+        <img src="./images/cart_empty.png" alt="в вашей корзине нет товаров" class="cart__empty">
+      </div>
+    </div>
+  </section>
+
+  <!-- попап оформления заказа -->
+  <section class="popup popup-order">
+    <div class="order__container">
+      <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__close" />
+      <div class="order">
+        <h3 class="order__title">Оформление заказа</h3>
+        <div class="form_user-block">
+          <button type="button" class="form__submit-btn form__submit-btn_color_white form_go-cart">&larr; вернуться в
+            корзину</button>
+          <form name="form_user-block" class="form form_user-block">
+            <input type="text" placeholder="Имя" id="name" class="form__input form__input_name" minlength="2"
+              maxlength="40" required>
+            <span class="form__error name-error"></span>
+            <input placeholder="Телефон" type="tel" id="phone" minlength="10" class="form__input form__input_phone"
+              required>
+            <span class="form__error phone-error"></span>
+            <input placeholder="валидация" type="tel" id="phoneValid" minlength="11" maxlength="12"
+              class="form__input form__input_phone" style="display: none" required>
+            <label class="container">Принимаю <a href="/terms" target="_blank">Пользовательское соглашение</a>
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <button type="submit" name="form__submit" class="form__submit-btn form__submit">Далее &rarr;</button>
+          </form>
+        </div>
+        <div class="form_delivery-block" style="display: none;">
+          <button type="button" class="form__submit-btn form__submit-btn_color_white form_go-user-block">&larr;
+            вернуться назад</button>
+          <p class="form__description">Сами заберете или нужна доставка?</p>
+          <form name="sposob" class="input-radio page_visibility">
+            <label for="sam" class="input-radio_label">
+              <input type="radio" name="sposob" id="sam" class="input-radio_radio" value="самовывоз"
+                required="required">
+              <span class="input-radio_text">самовывоз</span>
+            </label>
+
+            <label for="city" class="input-radio_label">
+              <input type="radio" name="sposob" id="city" class="input-radio_radio" value="доставка"
+                required="required">
+              <span class="input-radio_text">доставка</span>
+            </label>
+
+          </form>
+          <div class="form form_delivery-block_filial" style="padding: 0px">
+            <p class="form__description">По какому адресу заберете?</p>
+            <form name="filial" class="input-radio page_visibility">
+              <label for="ostr" class="input-radio_label">
+                <input type="radio" name="filial" id="ostr" class="input-radio_radio" value="Островского 26а"
+                  required="required" checked>
+                <span class="input-radio_text">Островского 26а</span>
+              </label>
+
+              <label for="lenina" class="input-radio_label">
+                <input type="radio" name="filial" id="lenina" class="input-radio_radio" value="Ленина 22"
+                  required="required">
+                <span class="input-radio_text">Ленина 22</span>
+              </label>
+            </form>
+          </div>
+          <form name="address" class="form address">
+            <div>
+              <p class="form__description">Напишите, пожалуйста, полный адрес</p>
+              <input placeholder="г.Салават, ул. ..., д. ..., кв. ..." type="text" id="address" minlength="8"
+                maxlength="102" class="form__input form__input_font_small form__input_address" required>
+              <span class="form__error address-error"></span>
+            </div>
+            <button type="submit" name="form__submit" class="form__submit-btn form__submit">Далее
+              &rarr;</button>
+          </form>
+        </div>
+
+        <div class="form_confirm-block" style="display: none;">
+          <button type="button" class="form__submit-btn form__submit-btn_color_white form_go-user-block">&larr;
+            вернуться назад</button>
+          <p class="form__description">Проверьте заполненные данные</p>
+          <ul class="order__table">
+          </ul>
+
+          <textarea placeholder="Дополнительная информация" type="text" id="address" minlength="8" maxlength="402"
+            class="form__input form__textarea form__input_comment"></textarea>
+          <button type="submit" name="form__submit" class="form__submit-btn form__submit">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- попап успешного завершения заказа  -->
+  <section class="popup popup-order-completed ">
+    <div class="message__container">
+      <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__close" />
+      <div class="message">
+        <h3 class="message__title">
+          Ваш заказ успешно оформлен!
+        </h3>
+        <p>
+          Ожидайте звонка от менеджера и подтверждения заказа
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- попап ошибки оформления заказа  -->
+  <section class="popup popup-order-non-completed ">
+    <div class="message__container">
+      <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__close" />
+      <div class="message">
+        <h3 class="message__title">
+          Ошибка при оформлении заказа!
+        </h3>
+        <p>
+          К сожалению, произошла ошибка. Пожалуйста, оформите заказ по телефону <a href="tel:+79872401555"
+            class="header__phone" title="позвонить в Шеф Чебурек">+7(987)240-15-55</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- шаблоны -->
+  <!-- шаблон "часто заказывают" -->
+  <template id="template-product-popular">
+    <li data-id="" class="product-popular__item">
+      <img src="https://shefcheburek.ru/images/products/54.png" alt="" class="product-popular__img">
+      <div class="product-popular__content">
+        <h3 class="product-popular__title"></h3>
+        <p class="product-popular__price"></p>
+      </div>
+    </li>
+  </template>
+  <!-- шаблон продукта -->
+  <template id="template-product">
+    <article class="product" data-id="">
+      <img src="https://shefcheburek.ru/images/products/54.png" alt="" class="product__img" />
+      <h3 class="product__title"></h3>
+      <p class="product__description"></p>
+      <div class="product__footer">
+        <p class="product__price"></p>
+        <button class="product__button">Выбрать</button>
+      </div>
+    </article>
+  </template>
+  <!-- шаблон для таблицы корзины-->
+  <template id="template-cart">
+    <article class="cart__line cart__line_product">
+      <div class="cart__line-product">
+        <img src="http://127.0.0.1:5500/images/mozarella.jpg" alt="" class="cart__product-img">
+        <h4 class="cart__product-title">пицца Деревенская</h4>
+        <p class="cart__product-weight">вес: 700г (средняя)</p>
+      </div>
+      <span class="cart__product-text cart__product-text_price">445 руб.</span>
+      <div class="quantity cart__product-text_quontity">
+        <div class="popup-product__quantity quantity">
+          <button class="quantity__btn quantity__btn_minus">-</button>
+          <input type="text" id="quantity" name="quantity" class="quantity__input" value="1" maxlength="2" min="1"
+            max="99" readonly>
+          <button class="quantity__btn quantity__btn_plus">+</button>
+        </div>
+      </div>
+      <span class="cart__product-text cart__product-text_cost">1200 руб.</span>
+      <button class="cart__product-trash"> &#10006; </button>
+    </article>
+  </template>
+
+  <!-- шаблон попапа обратной связи -->
+  <template id="template-feedback">
+    <img src="./images/button-close.svg" alt="кнопка закрытия" class="popup__cross" />
+    <h3 class="modal__title"></h3>
+    <p></p>
+    <form name="feedback" action="/" class="form">
+      <input type="text" minlength="2" maxlength="30" required placeholder="ваше имя" class="form__input"
+        id="form__input_type_name" name="type_name" />
+      <span class="form__input_error form__input_type_name-error"></span>
+      <input type="tel" minlength="2" maxlength="30" required type="text" placeholder="контакты (whatsapp/telegram)"
+        class="form__input" id="form__input_type_number" name="type_number" />
+      <span class="form__input_error form__input_type_number-error"></span>
+      <input type="text" placeholder="ваше сообщение" class="form__input form__input_type_activity"
+        id="form__input_type_activity" name="type_activity" minlength="2" maxlength="3000" required />
+      <span class="form__input_error form__input_type_activity-error"></span>
+      <button type="submit" class="form__submit-btn">Отправить</button>
+    </form>
+  </template>
+
+</body>
+
+</html>

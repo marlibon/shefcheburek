@@ -1,0 +1,50 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "Обучение в Яндекс.Практикум. Практическая работа по спринту №8.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlibon/mesto.git"
+  },
+  "author": "Marat Zagriev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marlibon/mesto/issues"
+  },
+  "homepage": "https://github.com/marlibon/mesto#readme",
+  "keywords": [
+    "Learning",
+    "platform"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "cssnano": "^5.1.14",
+    "gh-pages": "^5.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "postcss-loader": "^7.0.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "core-js": "^3.27.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "inputmask": "^5.0.7",
+    "url-loader": "^4.1.1",
+    "webpack-ftp-upload-plugin": "^1.0.2"
+  }
+}
