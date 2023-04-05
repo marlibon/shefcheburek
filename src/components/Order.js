@@ -68,6 +68,11 @@ export class Order {
             }
         },).mask(this._phone);
     };
+    resetForm () {
+        this._hideBlock(this._deliveryBlock);
+        this._hideBlock(this._confirmBlock);
+        this._viewBlock(this._userBlock);
+    }
     _setListener () {
         this._btnGoDelivery.addEventListener('click', (evt) => {
             evt.PreventDefault;
@@ -156,12 +161,16 @@ export class Order {
 
     }
 
+    _sumQuantity () {
+        console.log(this.data['data']);
+        return this.data['data'].reduce((sum, item) => item.quantity + sum, 0)
+    }
     _putConfirmData () {
         this.data["Имя"] = this._name.value;
         this.data["Телефон"] = this._phone.value;
         this.data["Способ доставки"] = this._formSposob.value;
         this.data["Адрес"] = this.data["Способ доставки"] === 'самовывоз' ? this._filial.value : this._address.value;
-        this.data["Заказ"] = `${this.data['data'].length} шт. за ${this.data['countCost']} ₽`;
+        this.data["Заказ"] = `${this._sumQuantity()} шт. за ${this.data['countCost']} ₽`;
         this.data["Стоимость доставки"] = this._deliveryCost();
         this.data["Всего к оплате"] = (this.data['countCost'] + this._deliveryCostRub) + ' ₽';
 

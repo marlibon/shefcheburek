@@ -1,7 +1,7 @@
 {
-  "name": "mesto",
+  "name": "cafe-react",
   "version": "1.0.0",
-  "description": "Обучение в Яндекс.Практикум. Практическая работа по спринту №8.",
+  "description": "Проект для кафе Шефчебурек г.Салават от Загриева Марата",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -11,17 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marlibon/mesto.git"
+    "url": "git+https://github.com/marlibon/cafe-react.git"
   },
   "author": "Marat Zagriev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marlibon/mesto/issues"
+    "url": "https://github.com/marlibon/cafe-react/issues"
   },
-  "homepage": "https://github.com/marlibon/mesto#readme",
+  "homepage": "https://github.com/marlibon/cafe-react#readme",
   "keywords": [
-    "Learning",
-    "platform"
+    "cafe-react",
+    "shefcheburek"
   ],
   "devDependencies": {
     "@babel/core": "^7.20.12",

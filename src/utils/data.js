@@ -415,12 +415,12 @@ const data = [
     often: false,
     properties: {
       1: {
-        name: "вес: 100 г",
+        name: "средний",
         cost: "80",
         weight: "вес: 100 г"
       },
       2: {
-        name: "вес: 200 г",
+        name: "большой",
         cost: "120",
         weight: "вес: 200 г"
       }
@@ -438,12 +438,12 @@ const data = [
     often: false,
     properties: {
       1: {
-        name: "вес: 100 г",
+        name: "средний",
         cost: "90",
         weight: "вес: 100 г"
       },
       2: {
-        name: "вес: 200 г",
+        name: "большой",
         cost: "140",
         weight: "вес: 200 г"
       }
@@ -463,12 +463,12 @@ const data = [
       1: {
         name: "6 шт.",
         cost: "90",
-        weight: "6 шт."
+        weight: "6 шт"
       },
       2: {
         name: "12 шт.",
         cost: "160",
-        weight: "12 шт."
+        weight: "12 шт"
       }
     },
     supplements: "Соусы",
@@ -486,12 +486,12 @@ const data = [
       1: {
         name: "сладкий",
         cost: "50",
-        weight: "сладкий"
+        weight: "сладкий."
       },
       2: {
         name: "соленый",
         cost: "50",
-        weight: "соленый"
+        weight: "соленый."
       }
     },
     supplements: "Соусы",
@@ -610,12 +610,12 @@ const data = [
       1: {
         name: "0,2 л",
         cost: "100",
-        weight: "0,2 л"
+        weight: "0,2 л."
       },
       2: {
         name: "0,3 л",
         cost: "130",
-        weight: "0,3 л"
+        weight: "0,3 л."
       }
     },
     supplements: "Добавки в напитки",
@@ -633,12 +633,12 @@ const data = [
       1: {
         name: "0,2 л",
         cost: "120",
-        weight: "0,2 л"
+        weight: "0,2 л."
       },
       2: {
         name: "0,3 л",
         cost: "150",
-        weight: "0,3 л"
+        weight: "0,3 л."
       }
     },
     supplements: "Добавки в напитки",

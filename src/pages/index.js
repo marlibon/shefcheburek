@@ -308,6 +308,7 @@ buttonCloseMessagePopup.addEventListener('click', (evt) => {
 
 buttonGoOrder.addEventListener('click', (evt) => {
   evt.preventDefault();
+  order.resetForm()
   order.importData(cart.exportData(), cart.countCost());
   order.putDataLastOrder();
   cartPopup.close();

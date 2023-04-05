@@ -112,10 +112,10 @@ export class Product {
       ? this._popupDescription.textContent = description
       : this._popupDescription.textContent = '';
     this._popupWeight.textContent = weight;
-    cost = (+cost + +this._sumSupplements) * this._quontity;
+    cost = (+cost + +this._sumSupplements);
     this._nameSupplements = this._nameSupplements === undefined ? "" : this._nameSupplements;
     weight = weight + this._nameSupplements;
-    this._popupAddCard.textContent = `Добавить в корзину за ${cost}₽`;
+    this._popupAddCard.textContent = `Добавить в корзину за ${cost * this._quontity}₽`;
     this._selectedProducts = { id, img, title, description, cost, type, weight, quantity: this._quontity };
   };
 

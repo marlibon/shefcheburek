@@ -10,7 +10,7 @@ export class Api {
   sendTelegram = (message) => {
     return fetch(this._urlBackServerForTelegram, {
       method: 'POST',
-      body: JSON.stringify({message}),
+      body: JSON.stringify({ message }),
       headers: {
         "Content-Type": "application/json",
         'Authorization': TOKEN_BACKEND_ORDERS
